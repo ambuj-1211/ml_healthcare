@@ -17,7 +17,6 @@ class preprocessor:
             review= ' '.join(review)
             return review
 
-
     def vectorize(self,data):
         tfidf=pickle.load(open('tfidf_vectorizer.pkl','rb'))
         ls=[]
@@ -25,8 +24,8 @@ class preprocessor:
         return vectorized_array
 
     def forward(self,data):
-        data = self.cleaning_string(data)
-        data = self.vectorize(data)
+        data1 = self.cleaning_string(data)
+        data = self.vectorize(data1)
         return data
 
 # if __name__=='__main__':
