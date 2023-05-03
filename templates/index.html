@@ -8,10 +8,27 @@
   </head>
   <body>
     <h2>HTML FORMS</h2>
-    <form action="/submit mehtod='post">
+    <!-- <form action="/submit mehtod='post">
       <label for="Symptoms">Symptoms:</label><br />
       <input type="text" id="Symptoms" name="Symptoms" value="0" /><br />
       <input type="submit" value="Submit" />
+    </form> -->
+
+    <form action='/submit' method='post'>
+      <div class="mb-3 m-3">
+        <label for="symptoms" class="form-label">Enter Symptoms</label>
+        <input type="text" class="form-control" id="symptoms" name="symptoms">
+        <!-- <input type="submit" value="Submit"> -->
+      </div>
+      <!-- <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div> -->
+      <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+      <button type="submit" class="btn btn-danger m-3">Submit</button>
     </form>
   </body>
 </html>

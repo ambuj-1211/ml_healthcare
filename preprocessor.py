@@ -2,25 +2,28 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import pickle
-
+import spacy
+# preprocessor.py file to get the text and clean it and vectorize it and return the vectorized array
 class preprocessor:
     def __init__(self):
         self.ps=PorterStemmer()
-        # self.nlp = spacy.load('en_core_web_sm')
+        self.nlp = spacy.load('en_core_web_sm')
         # self.stop_words = set(stopwords.words('english'))
 
-    def cleaning_string(self,data):        
+    def cleaning_string(self,data): 
             review= re.sub('[^a-zA-Z]',' ',data)
             review = review.lower()
             review = review.split()
+
             review= [self.ps.stem(word) for word in review if word not in stopwords.words('english')]
             review= ' '.join(review)
             return review
 
-    def vectorize(self,data):
+    def vectorize(self,data) :
         tfidf=pickle.load(open('tfidf_vectorizer.pkl','rb'))
         ls=[]
-        vectorized_array = tfidf.transform(ls.append(data)).toarray()
+        ls.append(data)
+        vectorized_array = tfidf.transform(ls).toarray()
         return vectorized_array
 
     def forward(self,data):
