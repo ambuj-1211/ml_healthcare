@@ -1,1 +1,0 @@
-print(model.predict(text).tostring())
