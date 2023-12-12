@@ -1,8 +1,12 @@
-import React from 'react'
-import Navbar from "../components/Navbar";
-import styles from '../constants/style';
+import React from 'react';
 import Footer from '../components/Footer';
+import Navbar from "../components/Navbar";
 import ServicePage from '../components/ServicePage';
+import styles from '../constants/style';
+
+
+const API_KEY ="YOUR_API_KEY_HERE"
+
 
 const Service = () => {
   return (

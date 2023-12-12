@@ -1,8 +1,8 @@
+// import React, { useState } from 'react';
 import axios from 'axios';
 import lottie from 'lottie-web';
 import React, { useEffect, useRef, useState } from 'react';
 import styles, { layout } from '../constants/style';
-
 const ServicePage = () => {
 
     const container = useRef(null)
