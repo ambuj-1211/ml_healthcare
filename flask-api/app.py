@@ -21,8 +21,8 @@ def predict_disease():
             symptoms = data.get('symptom', '')
             symptoms = pp.forward(symptoms)
             my_prediction = model.predict(symptoms)
-            my_prediction = np.array2string(my_prediction)
-            return jsonify({'prediction': my_prediction}), 200  # Return a 200 status code for success
+            my_prediction_str = ' '.join(my_prediction.astype(str))
+            return jsonify({'prediction': my_prediction_str}), 200  # Return a 200 status code for success
         except Exception as e:
             return jsonify({'error': str(e)}), 500
     return jsonify({'error': 'Invalid request method'}), 405
