@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef3be920.css",
+    "main.js": "/static/js/main.67738d77.js",
+    "static/js/787.616569c7.chunk.js": "/static/js/787.616569c7.chunk.js",
+    "static/media/Checkup.png": "/static/media/Checkup.46ebaa37d3fb8b4c9b25.png",
+    "static/media/RLogo.png": "/static/media/RLogo.487006565d23b6daf1ca.png",
+    "static/media/Yoga.png": "/static/media/Yoga.9a1d77ccf1ece780f8ce.png",
+    "static/media/Vaccine.png": "/static/media/Vaccine.9ee19febd039a4a2b3a1.png",
+    "static/media/Hydration.png": "/static/media/Hydration.0acc804970f0745d51e5.png",
+    "static/media/Mask.png": "/static/media/Mask.4adf52abfa39d20c569e.png",
+    "static/media/Hygiene.png": "/static/media/Hygiene.cd15d513ac0064f6091e.png",
+    "static/media/logo.png": "/static/media/logo.e4d691f382a6bd451163.png",
+    "static/media/Star.svg": "/static/media/Star.5baf88ad0a72df4561e5b994f84ab6fe.svg",
+    "static/media/Shield.svg": "/static/media/Shield.cacb339008a7436142b8c7ef42f59d31.svg",
+    "index.html": "/index.html",
+    "main.ef3be920.css.map": "/static/css/main.ef3be920.css.map",
+    "main.67738d77.js.map": "/static/js/main.67738d77.js.map",
+    "787.616569c7.chunk.js.map": "/static/js/787.616569c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef3be920.css",
+    "static/js/main.67738d77.js"
+  ]
+}
